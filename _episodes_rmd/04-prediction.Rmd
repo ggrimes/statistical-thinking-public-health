@@ -92,7 +92,7 @@ dat %>%
   mutate(Height = round(Height)) %>%
   ggplot(aes(x = Height, y = Weight)) +
   geom_point() +
-  geom_point(data = means, aes(x = Height, y = mean), colour = "red", size = 2) +
+  geom_point(data = means, aes(x = Height, y = mean), colour = "magenta", size = 2) +
   geom_errorbar(data = means, aes(x = Height, y = mean, ymin = lower_CI, ymax = upper_CI),
                 colour = "red")
 ```
@@ -149,7 +149,7 @@ observation.
 > >   geom_point() +
 > >   geom_point(data = means, aes(x = Age, y = mean), colour = "red", size = 2) +
 > >   geom_errorbar(data = means, aes(x = Age, y = mean, ymin = lower_CI, ymax = upper_CI),
-> >                 colour = "red")
+> >                 colour = "magenta")
 > > ```
 > {: .solution}
 {: .challenge}
